@@ -1,23 +1,23 @@
 const steps = [
-  { num: "01", title: "Definir hipótesis", desc: "Establece los parámetros, el universo y las condiciones del experimento." },
-  { num: "02", title: "Lanzar run o sweep", desc: "Ejecuta una o múltiples configuraciones de forma reproducible." },
-  { num: "03", title: "Inspeccionar resultados", desc: "Revisa métricas, artifacts, logs y curvas generadas por cada run." },
-  { num: "04", title: "Comparar alternativas", desc: "Coloca runs lado a lado. Evalúa trade-offs con datos concretos." },
-  { num: "05", title: "Marcar candidatos", desc: "Selecciona los runs que merecen avanzar. Construye tu shortlist." },
-  { num: "06", title: "Promover a paper", desc: "Ejecuta en modo paper con disciplina antes de comprometer capital real." },
-  { num: "07", title: "Preparar ejecución segura", desc: "Configura boundaries, checklists y supervisión antes de operar en vivo." },
+  { num: "01", title: "Brief y objetivo", desc: "Aterrizamos la oferta, la audiencia y el resultado comercial que debe conseguir la web." },
+  { num: "02", title: "Arquitectura de mensaje", desc: "Ordenamos la narrativa, la prueba social y el camino de lectura." },
+  { num: "03", title: "Diseño y copy", desc: "Convertimos la estrategia en una pieza clara, sobria y orientada a venta." },
+  { num: "04", title: "Implementación", desc: "Montamos la página con una estructura reutilizable y fácil de ampliar." },
+  { num: "05", title: "Lanzamiento", desc: "Publicamos la demo o el caso de muestra sin duplicar proyectos completos." },
+  { num: "06", title: "Medición", desc: "Observamos comportamiento, CTA y puntos de fricción para mejorar con datos." },
+  { num: "07", title: "Iteración", desc: "Sumamos nuevos demos, bloques o campañas sobre la misma base." },
 ];
 
 const WorkflowSection = () => (
-  <section className="py-24 border-t border-border" id="workflow">
+  <section className="border-t border-border py-24" id="process">
     <div className="mx-auto max-w-6xl px-6">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="font-mono text-xs uppercase tracking-widest text-primary">Flujo de trabajo</p>
+        <p className="font-mono text-xs uppercase tracking-widest text-primary">Proceso</p>
         <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-          De la hipótesis a la ejecución, paso a paso
+          De la idea a una página que vende, paso a paso
         </h2>
         <p className="mt-4 text-muted-foreground">
-          Cada etapa tiene un propósito claro. El sistema no permite atajos.
+          Cada etapa deja una pieza útil para el negocio y una estructura que se puede reutilizar.
         </p>
       </div>
 

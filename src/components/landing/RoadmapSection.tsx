@@ -1,9 +1,9 @@
 const items = [
-  { phase: "Ahora", title: "Shell maturity", desc: "Estabilidad del workspace, navegación, UX consistente." },
-  { phase: "Q2", title: "Engine contracts", desc: "Contratos más fuertes entre el engine y los módulos de evaluación." },
-  { phase: "Q3", title: "Paper Ops avanzado", desc: "Tracking granular, alertas, métricas en tiempo real para paper trading." },
-  { phase: "Q4", title: "Execution safety", desc: "Boundaries supervisados, integración de checklists pre-trade obligatorios." },
-  { phase: "Futuro", title: "Automatización controlada", desc: "Ejecución automatizada solo dentro de límites previamente validados." },
+  { phase: "Ahora", title: "Escaparate principal", desc: "Nexus Marketing como home comercial y QuantLab como demo destacada." },
+  { phase: "Próximo", title: "Más demos", desc: "Sumar nuevos casos de muestra sin duplicar el proyecto base." },
+  { phase: "Q2", title: "Más conversiones", desc: "Afinar CTA, prueba social y recorrido de lectura." },
+  { phase: "Q3", title: "Biblioteca comercial", desc: "Construir bloques reutilizables para servicios, campañas y landings." },
+  { phase: "Futuro", title: "Escala ordenada", desc: "Más páginas, más casos y más variaciones sobre la misma estructura." },
 ];
 
 const RoadmapSection = () => (
@@ -12,10 +12,10 @@ const RoadmapSection = () => (
       <div className="mx-auto max-w-2xl text-center">
         <p className="font-mono text-xs uppercase tracking-widest text-primary">Roadmap</p>
         <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-          Hacia dónde vamos
+          Hacia una biblioteca comercial reutilizable
         </h2>
         <p className="mt-4 text-muted-foreground">
-          Avance incremental. Sin promesas vacías.
+          Avance incremental, pensado para vender mejor y ampliar el portfolio con facilidad.
         </p>
       </div>
 

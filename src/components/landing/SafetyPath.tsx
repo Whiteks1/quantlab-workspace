@@ -1,11 +1,11 @@
 import { CheckCircle } from "lucide-react";
 
 const stages = [
-  { label: "Research", desc: "Hipótesis, diseño experimental, ejecución de backtests.", color: "text-primary" },
-  { label: "Validation", desc: "Forward evaluation, métricas estables, comparación rigurosa.", color: "text-primary" },
-  { label: "Paper", desc: "Operación disciplinada sin capital real. Tracking completo.", color: "text-warning" },
-  { label: "Execution Safety", desc: "Boundaries activos, checklists completos, supervisión humana.", color: "text-success" },
-  { label: "Supervised Live", desc: "Ejecución controlada con límites explícitos. Sin piloto automático.", color: "text-success" },
+  { label: "Discovery", desc: "Entendemos oferta, mercado y objetivo comercial.", color: "text-primary" },
+  { label: "Strategy", desc: "Definimos mensajes, casos y jerarquía de contenido.", color: "text-primary" },
+  { label: "Build", desc: "Construimos la landing y dejamos lista la base reutilizable.", color: "text-warning" },
+  { label: "Launch", desc: "Publicamos el sitio y conectamos la demo real de QuantLab.", color: "text-success" },
+  { label: "Scale", desc: "Sumamos nuevos casos y optimizaciones sobre la misma estructura.", color: "text-success" },
 ];
 
 const SafetyPath = () => (
@@ -14,10 +14,10 @@ const SafetyPath = () => (
       <div className="mx-auto max-w-2xl text-center">
         <p className="font-mono text-xs uppercase tracking-widest text-primary">Seguridad de ejecución</p>
         <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-          De la investigación a la ejecución, con disciplina
+          De la propuesta al lanzamiento, con disciplina
         </h2>
         <p className="mt-4 text-muted-foreground">
-          QuantLab prioriza la seguridad y el rigor antes de cualquier automatización agresiva.
+          Nexus Marketing prioriza mensajes claros, prueba social y una estructura que se pueda mantener sin fricción.
         </p>
       </div>
 

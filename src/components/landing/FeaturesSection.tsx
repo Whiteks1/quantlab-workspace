@@ -1,29 +1,35 @@
 import {
-  FlaskConical, Play, GitCompare, FileSearch, Star,
-  FileSpreadsheet, ClipboardCheck, ShieldCheck,
+  BadgeCheck,
+  BarChart3,
+  LayoutTemplate,
+  LineChart,
+  Megaphone,
+  PenTool,
+  Rocket,
+  Target,
 } from "lucide-react";
 
 const features = [
-  { icon: FlaskConical, title: "Experiments", desc: "Define hipótesis, configura parámetros y lanza ejecuciones reproducibles desde un solo lugar." },
-  { icon: Play, title: "Runs", desc: "Cada ejecución queda registrada con sus inputs, outputs, métricas y estado. Nada se pierde." },
-  { icon: GitCompare, title: "Compare", desc: "Compara runs lado a lado. Sharpe, drawdown, curvas de equity, parámetros. Decisiones basadas en datos." },
-  { icon: FileSearch, title: "Artifacts", desc: "Inspecciona logs, gráficos, tablas y outputs generados por cada run. Todo accesible y navegable." },
-  { icon: Star, title: "Candidates / Shortlist", desc: "Marca los runs más prometedores. Construye una shortlist antes de promover a paper trading." },
-  { icon: FileSpreadsheet, title: "Paper Ops", desc: "Ejecuta tus candidatos en modo paper con disciplina. Valida sin riesgo real antes de avanzar." },
-  { icon: ClipboardCheck, title: "Pre-trade Intake", desc: "Un checklist operativo antes de cada decisión de ejecución. Sin atajos, sin improvisación." },
-  { icon: ShieldCheck, title: "Execution Boundaries", desc: "Límites supervisados para ejecución controlada. El sistema avanza solo cuando las condiciones están dadas." },
+  { icon: Target, title: "Posicionamiento", desc: "Aterrizamos qué vendes, a quién y por qué debería importarle en segundos." },
+  { icon: LayoutTemplate, title: "Landing pages", desc: "Diseñamos páginas enfocadas a una sola acción, con jerarquía clara y ruta de conversión." },
+  { icon: PenTool, title: "Copy de venta", desc: "Mensajes, titulares y bloques de apoyo que explican valor sin ruido innecesario." },
+  { icon: BarChart3, title: "Prueba social", desc: "Casos de muestra, demos y evidencia para reducir fricción comercial." },
+  { icon: Megaphone, title: "Lanzamientos", desc: "Piezas listas para campañas, presentaciones y activaciones con foco comercial." },
+  { icon: LineChart, title: "Analítica", desc: "Medición simple para entender qué páginas y mensajes están funcionando." },
+  { icon: BadgeCheck, title: "Sistema reutilizable", desc: "Componentes y estructura preparados para añadir más demos o campañas sin rehacerlo todo." },
+  { icon: Rocket, title: "Iteración rápida", desc: "Ajustes cortos, entregas limpias y mejoras continuas sobre una base ya sólida." },
 ];
 
 const FeaturesSection = () => (
-  <section className="py-24 border-t border-border" id="features">
+  <section className="border-t border-border py-24" id="services">
     <div className="mx-auto max-w-6xl px-6">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="font-mono text-xs uppercase tracking-widest text-primary">Capacidades</p>
+        <p className="font-mono text-xs uppercase tracking-widest text-primary">Servicios</p>
         <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-          Todo lo que necesitas en una sola superficie
+          Una base comercial hecha para convertir
         </h2>
         <p className="mt-4 text-muted-foreground">
-          Cada módulo resuelve una etapa real del proceso de investigación y decisión cuantitativa.
+          Cada bloque resuelve una parte del recorrido comercial y deja la web lista para escalar con nuevos casos de muestra.
         </p>
       </div>
 

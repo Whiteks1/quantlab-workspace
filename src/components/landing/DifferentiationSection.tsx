@@ -1,15 +1,15 @@
 import { Check, X } from "lucide-react";
 
 const alternatives = [
-  { name: "Dashboard bonito", research: false, artifacts: false, compare: false, decision: false, paper: false, boundaries: false },
-  { name: "Bot de automatización", research: false, artifacts: false, compare: false, decision: false, paper: false, boundaries: false },
-  { name: "Broker UI", research: false, artifacts: false, compare: false, decision: false, paper: true, boundaries: false },
-  { name: "Notebooks", research: true, artifacts: false, compare: false, decision: false, paper: false, boundaries: false },
-  { name: "QuantLab", research: true, artifacts: true, compare: true, decision: true, paper: true, boundaries: true, highlight: true },
+  { name: "Plantilla genérica", strategy: false, copy: false, design: true, tracking: false, iteration: false, portfolio: false },
+  { name: "Freelance suelto", strategy: true, copy: false, design: true, tracking: false, iteration: false, portfolio: false },
+  { name: "Agencia tradicional", strategy: true, copy: true, design: true, tracking: true, iteration: false, portfolio: false },
+  { name: "Equipo interno", strategy: true, copy: true, design: true, tracking: true, iteration: true, portfolio: false },
+  { name: "Nexus Marketing", strategy: true, copy: true, design: true, tracking: true, iteration: true, portfolio: true, highlight: true },
 ];
 
-const cols = ["Research", "Artifacts", "Compare", "Decisión", "Paper", "Boundaries"];
-const colKeys = ["research", "artifacts", "compare", "decision", "paper", "boundaries"] as const;
+const cols = ["Estrategia", "Copy", "Diseño", "Tracking", "Iteración", "Portfolio"];
+const colKeys = ["strategy", "copy", "design", "tracking", "iteration", "portfolio"] as const;
 
 const DifferentiationSection = () => (
   <section className="py-24 border-t border-border" id="diff">
@@ -17,10 +17,10 @@ const DifferentiationSection = () => (
       <div className="mx-auto max-w-2xl text-center">
         <p className="font-mono text-xs uppercase tracking-widest text-primary">Diferenciación</p>
         <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-          ¿Por qué no otra herramienta?
+          ¿Por qué Nexus Marketing?
         </h2>
         <p className="mt-4 text-muted-foreground">
-          Las alternativas resuelven fragmentos. QuantLab conecta el flujo completo.
+          Las alternativas resuelven fragmentos. Nexus Marketing conecta la venta, la prueba social y la estructura de entrega.
         </p>
       </div>
 

@@ -1,11 +1,11 @@
 import heroImage from "@/assets/hero-workspace.jpg";
-import { FlaskConical, GitCompare, ShieldCheck, BarChart3 } from "lucide-react";
+import { BadgeCheck, BarChart3, LayoutTemplate, Sparkles } from "lucide-react";
 
 const badges = [
-  { icon: FlaskConical, label: "Experiments" },
-  { icon: GitCompare, label: "Compare" },
-  { icon: BarChart3, label: "Paper Ops" },
-  { icon: ShieldCheck, label: "Execution Safety" },
+  { icon: LayoutTemplate, label: "Landing pages" },
+  { icon: Sparkles, label: "Portfolio" },
+  { icon: BarChart3, label: "Analytics" },
+  { icon: BadgeCheck, label: "Conversion" },
 ];
 
 const HeroSection = () => (
@@ -14,22 +14,22 @@ const HeroSection = () => (
     <div className="relative mx-auto max-w-6xl px-6">
       <div className="mx-auto max-w-3xl text-center">
         <p className="mb-4 font-mono text-xs uppercase tracking-widest text-primary">
-          Quantitative Research Workspace
+          Nexus Marketing Studio
         </p>
         <h1 className="text-4xl font-bold leading-tight tracking-tight text-heading sm:text-5xl lg:text-6xl">
-          Tu shell de trabajo para investigación cuantitativa y{" "}
-          <span className="text-gradient">ejecución supervisada</span>
+          Web comercial, mensajes claros y demos que{" "}
+          <span className="text-gradient">aceleran la conversión</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-          Una superficie unificada para lanzar experimentos, revisar runs, comparar resultados, inspeccionar artifacts y avanzar solo cuando el sistema está listo.
+          Construimos la capa comercial de tu marca: landing pages, portfolio, contenido y estructura de venta. QuantLab aparece aquí como caso de muestra, no como el proyecto completo.
         </p>
 
         <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <a href="#cta" className="rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20">
-            Explorar QuantLab
+          <a href="#portfolio" className="rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20">
+            Ver portfolio
           </a>
-          <a href="#workflow" className="rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary/30 hover:bg-secondary">
-            Ver el flujo de trabajo
+          <a href="#services" className="rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary/30 hover:bg-secondary">
+            Explorar servicios
           </a>
         </div>
 
@@ -46,7 +46,7 @@ const HeroSection = () => (
       <div className="mt-16 overflow-hidden rounded-xl border border-border shadow-2xl shadow-primary/5">
         <img
           src={heroImage}
-          alt="QuantLab — workspace de investigación cuantitativa"
+          alt="Nexus Marketing — espacio de trabajo comercial"
           width={1920}
           height={1080}
           className="w-full"

@@ -3,66 +3,66 @@ import { useState } from "react";
 const tabs = [
   {
     id: "shell",
-    label: "Desktop Shell",
+    label: "Landing",
     content: {
-      sidebar: ["Experiments", "Runs", "Compare", "Artifacts", "Paper Ops"],
-      header: "QuantLab Shell — Workspace",
+      sidebar: ["Hero", "Oferta", "Prueba social", "CTA"],
+      header: "Nexus Studio — Landing comercial",
       rows: [
-        { label: "EXP-042 · Mean Reversion BTC", status: "active", metric: "Sharpe 1.82" },
-        { label: "EXP-041 · Momentum ETH", status: "done", metric: "Sharpe 0.91" },
-        { label: "EXP-040 · Pairs Trading", status: "review", metric: "Sharpe 2.14" },
+        { label: "Hero con propuesta clara", status: "active", metric: "Above the fold" },
+        { label: "Bloque de credibilidad", status: "done", metric: "Casos y demos" },
+        { label: "CTA único", status: "review", metric: "Reserva / demo" },
       ],
     },
   },
   {
     id: "runs",
-    label: "Runs Explorer",
+    label: "Portfolio",
     content: {
-      sidebar: ["All Runs", "Active", "Completed", "Failed"],
-      header: "Runs Explorer — 147 runs",
+      sidebar: ["QuantLab", "Nuevos casos", "Demos", "Próximos"],
+      header: "Portfolio — casos seleccionados",
       rows: [
-        { label: "RUN-1023 · sweep_lr_0.001", status: "done", metric: "MaxDD -8.2%" },
-        { label: "RUN-1022 · sweep_lr_0.005", status: "done", metric: "MaxDD -12.4%" },
-        { label: "RUN-1021 · sweep_lr_0.01", status: "failed", metric: "Error" },
+        { label: "QuantLab", status: "done", metric: "Demo real" },
+        { label: "Case study 02", status: "active", metric: "Próximo" },
+        { label: "Case study 03", status: "review", metric: "Pendiente" },
       ],
     },
   },
   {
     id: "compare",
-    label: "Compare",
+    label: "Tracking",
     content: {
-      sidebar: ["Selected (3)", "Metrics", "Charts", "Parameters"],
-      header: "Compare — 3 candidatos",
+      sidebar: ["Leads", "CTA", "Scroll", "Clicks"],
+      header: "Analytics — lectura simple",
       rows: [
-        { label: "RUN-1023 vs RUN-1019", status: "active", metric: "ΔSharpe +0.34" },
-        { label: "RUN-1023 vs RUN-1017", status: "done", metric: "ΔSharpe +0.72" },
-        { label: "RUN-1019 vs RUN-1017", status: "review", metric: "ΔSharpe +0.38" },
+        { label: "CTA principal", status: "active", metric: "Acciones" },
+        { label: "Sección portfolio", status: "done", metric: "Interés" },
+        { label: "Formulario / contacto", status: "review", metric: "Conversión" },
       ],
     },
   },
   {
     id: "artifacts",
-    label: "Artifacts",
+    label: "Sistema",
     content: {
-      sidebar: ["Equity Curves", "Logs", "Configs", "Reports"],
-      header: "Artifacts — RUN-1023",
+      sidebar: ["Bloques", "Componentes", "Copy", "CTAs"],
+      header: "Sistema — base reusable",
       rows: [
-        { label: "equity_curve.png", status: "done", metric: "234 KB" },
-        { label: "params.json", status: "done", metric: "1.2 KB" },
-        { label: "execution_log.csv", status: "done", metric: "45 KB" },
+        { label: "Section cards", status: "done", metric: "Reutilizable" },
+        { label: "Portfolio data", status: "done", metric: "Centralizado" },
+        { label: "Demo links", status: "done", metric: "Configurables" },
       ],
     },
   },
   {
     id: "paper",
-    label: "Paper Ops",
+    label: "Growth",
     content: {
-      sidebar: ["Active Papers", "History", "Metrics", "Boundaries"],
-      header: "Paper Ops — 2 activos",
+      sidebar: ["Nuevos demos", "Landing A/B", "Contenido", "SEO"],
+      header: "Growth — próximas mejoras",
       rows: [
-        { label: "PAPER-012 · Mean Reversion BTC", status: "active", metric: "PnL +2.3%" },
-        { label: "PAPER-011 · Pairs Trading", status: "review", metric: "PnL -0.4%" },
-        { label: "PAPER-010 · Momentum ETH", status: "done", metric: "PnL +5.1%" },
+        { label: "Nuevo caso de muestra", status: "active", metric: "Añadir" },
+        { label: "Más demos", status: "review", metric: "Escalar" },
+        { label: "Landing de captación", status: "done", metric: "Listo" },
       ],
     },
   },
@@ -83,12 +83,12 @@ const ProductPreview = () => {
     <section className="py-24 border-t border-border" id="preview">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="font-mono text-xs uppercase tracking-widest text-primary">Producto</p>
+          <p className="font-mono text-xs uppercase tracking-widest text-primary">Preview</p>
           <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-            Dentro de QuantLab
+            Dentro de Nexus Marketing
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Cada vista resuelve una etapa real del proceso. Aquí no hay dashboards decorativos.
+            Cada vista representa una pieza comercial real. El objetivo es enseñar estructura, no decorar la página.
           </p>
         </div>
 
