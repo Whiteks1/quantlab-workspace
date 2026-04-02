@@ -1,12 +1,12 @@
 import { Repeat, Eye, Compass, Lock, Milestone, Zap } from "lucide-react";
 
 const principles = [
-  { icon: Repeat, title: "Reproducibilidad", desc: "Cada run puede recrearse exactamente. Mismos inputs, mismos resultados." },
-  { icon: Eye, title: "Auditabilidad", desc: "Todo queda registrado. Parámetros, decisiones, artifacts y timestamps." },
-  { icon: Compass, title: "Claridad operativa", desc: "Cada pantalla tiene un propósito. Nada superfluo, nada ambiguo." },
-  { icon: Lock, title: "Control local", desc: "Tus datos, tus modelos, tu infraestructura. Sin dependencias externas obligatorias." },
-  { icon: Milestone, title: "Boundaries explícitos", desc: "El sistema define qué está permitido en cada etapa. Sin atajos implícitos." },
-  { icon: Zap, title: "Automatización preparada", desc: "La automatización llega cuando el sistema está listo, no antes." },
+  { icon: Repeat, title: "Consistencia", desc: "La marca suena igual en la home, el portfolio y cada demo." },
+  { icon: Eye, title: "Evidencia", desc: "Lo que se dice se apoya con casos, enlaces o pruebas visibles." },
+  { icon: Compass, title: "Claridad", desc: "Cada bloque responde a una sola intención y evita el ruido visual." },
+  { icon: Lock, title: "Control", desc: "La estructura es ligera, editable y fácil de mantener desde un único sitio." },
+  { icon: Milestone, title: "Sistema", desc: "La web se piensa como base reutilizable, no como una pieza cerrada." },
+  { icon: Zap, title: "Velocidad", desc: "Se publica rápido, se corrige rápido y se amplía sin rehacerlo todo." },
 ];
 
 const PrinciplesSection = () => (
@@ -15,7 +15,7 @@ const PrinciplesSection = () => (
       <div className="mx-auto max-w-2xl text-center">
         <p className="font-mono text-xs uppercase tracking-widest text-primary">Principios</p>
         <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-          Construido sobre convicciones, no sobre tendencias
+          Construido para vender con orden, no para impresionar sin rumbo
         </h2>
       </div>
 

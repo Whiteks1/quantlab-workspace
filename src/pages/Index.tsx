@@ -2,6 +2,7 @@ import Navbar from "@/components/landing/Navbar";
 import HeroSection from "@/components/landing/HeroSection";
 import ProblemSection from "@/components/landing/ProblemSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
+import PortfolioSection from "@/components/landing/PortfolioSection";
 import WorkflowSection from "@/components/landing/WorkflowSection";
 import ProductLayers from "@/components/landing/ProductLayers";
 import PrinciplesSection from "@/components/landing/PrinciplesSection";
@@ -18,6 +19,7 @@ const Index = () => (
     <HeroSection />
     <ProblemSection />
     <FeaturesSection />
+    <PortfolioSection />
     <WorkflowSection />
     <ProductLayers />
     <PrinciplesSection />

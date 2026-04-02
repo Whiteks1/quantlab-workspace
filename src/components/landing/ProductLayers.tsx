@@ -1,24 +1,24 @@
-import { Cpu, FileBox, Monitor, ShieldAlert, Plug, Calculator } from "lucide-react";
+import { ChartColumnIncreasing, Code2, FileText, Gauge, LayoutGrid, ShieldCheck } from "lucide-react";
 
 const layers = [
-  { icon: Cpu, title: "Quant Engine", desc: "Motor de ejecución de estrategias, backtesting y evaluación forward. El núcleo computacional." },
-  { icon: FileBox, title: "Canonical Artifacts", desc: "Resultados estandarizados: métricas, curvas, logs y configuraciones en formato canónico." },
-  { icon: Monitor, title: "Desktop Shell", desc: "Workspace unificado. Navegación, comparación, decisión y operación desde una sola interfaz." },
-  { icon: ShieldAlert, title: "Operational Boundaries", desc: "Límites explícitos que el sistema impone antes de permitir avances. Control, no automatización ciega." },
-  { icon: Plug, title: "Stepbit (opcional)", desc: "Integración opcional con Stepbit para ejecución externa. QuantLab no depende de él para funcionar.", optional: true },
-  { icon: Calculator, title: "Pre-trade Calculator", desc: "Cálculo de sizing, riesgo y condiciones pre-operativas. Boundary upstream antes de ejecutar." },
+  { icon: FileText, title: "Estrategia", desc: "Definimos oferta, mensaje y orden de las secciones antes de producir diseño." },
+  { icon: LayoutGrid, title: "Sistema visual", desc: "Una base de componentes y bloques reutilizables para escalar el sitio sin perder coherencia." },
+  { icon: Code2, title: "Implementación", desc: "Estructura limpia y mantenible para añadir casos, páginas o campañas nuevas." },
+  { icon: ChartColumnIncreasing, title: "Conversión", desc: "Jerarquía visual pensada para mover al usuario hacia el siguiente paso." },
+  { icon: ShieldCheck, title: "Confianza", desc: "Portfolio, prueba social y consistencia para reducir la fricción comercial.", optional: true },
+  { icon: Gauge, title: "Optimización", desc: "Medición simple para iterar sobre CTA, contenido y recorrido." },
 ];
 
 const ProductLayers = () => (
   <section className="py-24 border-t border-border" id="layers">
     <div className="mx-auto max-w-6xl px-6">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="font-mono text-xs uppercase tracking-widest text-primary">Arquitectura</p>
+        <p className="font-mono text-xs uppercase tracking-widest text-primary">Estructura</p>
         <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-          Capas de producto
+          Capas de entrega
         </h2>
         <p className="mt-4 text-muted-foreground">
-          QuantLab se organiza en capas independientes que se componen de forma modular.
+          Nexus Marketing se organiza en capas independientes para poder sumar nuevas demos, servicios o landings sin duplicar todo el trabajo.
         </p>
       </div>
 

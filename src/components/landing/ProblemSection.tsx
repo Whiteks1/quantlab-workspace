@@ -2,20 +2,20 @@ import { AlertTriangle } from "lucide-react";
 
 const problems = [
   {
-    title: "Herramientas dispersas",
-    desc: "Notebooks, scripts, hojas de cálculo y terminales desconectados entre sí. Cada etapa vive en un lugar diferente.",
+    title: "Mensajes dispersos",
+    desc: "Webs, decks y redes dicen cosas distintas. La propuesta se diluye antes de llegar al formulario.",
   },
   {
-    title: "Runs aislados",
-    desc: "Cada experimento muere al terminar. No hay continuidad entre el resultado y la siguiente decisión.",
+    title: "Poca prueba social",
+    desc: "Sin casos claros ni demos visibles, la confianza depende de promesas y no de evidencia.",
   },
   {
-    title: "Sin trazabilidad",
-    desc: "¿Qué parámetros generaron este resultado? ¿Cuándo se ejecutó? ¿Contra qué se comparó? Nadie lo sabe.",
+    title: "Páginas que no convierten",
+    desc: "Diseño correcto, pero sin jerarquía comercial, CTA único ni recorrido convincente.",
   },
   {
-    title: "Demasiado ruido",
-    desc: "Dashboards bonitos que no conectan con un flujo de trabajo real. Métricas sin contexto operativo.",
+    title: "Sin sistema",
+    desc: "Cada landing se resuelve desde cero. Eso ralentiza lanzamientos y complica la escalabilidad.",
   },
 ];
 
@@ -25,10 +25,10 @@ const ProblemSection = () => (
       <div className="mx-auto max-w-2xl text-center">
         <p className="font-mono text-xs uppercase tracking-widest text-primary">El problema</p>
         <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-          La investigación cuantitativa necesita más que notebooks y dashboards
+          La mayoría de webs vende menos de lo que podría
         </h2>
         <p className="mt-4 text-muted-foreground">
-          Entre la hipótesis y la ejecución existe un vacío operativo que las herramientas actuales no resuelven.
+          Entre el tráfico y la oportunidad suele haber una presentación débil, demasiado genérica o directamente incoherente.
         </p>
       </div>
 
