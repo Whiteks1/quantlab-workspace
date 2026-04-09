@@ -7,7 +7,7 @@ import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
-const routerBasename = import.meta.env.BASE_URL;
+const routerBasename = import.meta.env.PROD ? "/quantlab-workspace" : "/";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
