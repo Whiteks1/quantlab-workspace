@@ -88,7 +88,7 @@ const HeroSection = () => (
                 <span className="h-2.5 w-2.5 rounded-full bg-warning/60" />
                 <span className="h-2.5 w-2.5 rounded-full bg-success/60" />
               </div>
-              <span className="ml-3 font-mono text-xs text-muted-foreground">Evidence Surfaces / run_id: ql-2406</span>
+              <span className="ml-3 font-mono text-xs text-muted-foreground">Research evidence / run_id: ql-2406</span>
             </div>
 
             <div className="grid gap-4 p-5">

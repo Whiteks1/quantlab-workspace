@@ -24,7 +24,7 @@ export const brandLayers = [
     title: "QuantPulse",
     role: "Sibling signal product",
     description:
-      "A sibling product in the QuantLab ecosystem that surfaces signal, context, and research priorities.",
+      "A sibling signal product that surfaces context and research priorities when they help frame the work.",
   },
 ];
 
@@ -123,9 +123,9 @@ export const workflowSteps = [
 
 export const architectureModules = [
   {
-    title: "QuantLab",
+    title: "Research workflow",
     description:
-      "The umbrella ecosystem that keeps product roles explicit instead of collapsing everything into one label.",
+      "The public workflow that turns hypotheses into runs, evidence, and supervised decisions.",
   },
   {
     title: "QuantLab Research",
@@ -135,7 +135,7 @@ export const architectureModules = [
   {
     title: "QuantPulse",
     description:
-      "The sibling signal product that surfaces context and helps prioritize what should be researched next.",
+      "A sibling product that can surface context when it helps explain where research priorities originate.",
   },
   {
     title: "QuantLab Core",
