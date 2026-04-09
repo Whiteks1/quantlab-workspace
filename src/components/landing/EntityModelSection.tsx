@@ -1,46 +1,35 @@
-import { coreEntities } from "@/content/quantlab";
-
 const EntityModelSection = () => (
   <section className="border-t border-border py-24" id="system">
     <div className="mx-auto max-w-6xl px-6">
       <div className="mx-auto max-w-3xl text-center">
-        <p className="font-mono text-xs uppercase tracking-widest text-primary">What QuantLab is</p>
+        <p className="font-mono text-xs uppercase tracking-widest text-primary">Product</p>
         <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-          QuantLab Research explains a research system, not a trading front end
+          A research product, not a trading front end
         </h2>
         <p className="mt-4 text-muted-foreground">
-          QuantLab Research is the public product. QuantLab Core runs the work. QuantPulse is secondary
-          context, not a hidden feature or competing headline inside this landing.
+          QuantLab Research turns research into a visible operating system: clear inputs, repeatable
+          runs, inspectable outputs, and supervised follow-through.
         </p>
       </div>
 
       <div className="mt-10 grid gap-4 sm:grid-cols-3">
         {[
           {
-            title: "QuantLab Research",
-            desc: "Public product that explains the workflow, exposes evidence, and stays honest about supervision boundaries.",
+            title: "Explicit hypotheses",
+            desc: "Every research direction starts with a concrete brief and a visible operating context.",
           },
           {
-            title: "QuantPulse",
-            desc: "Sibling signal product that may surface context and priorities, without becoming the main story of this site.",
+            title: "Traceable runs",
+            desc: "Inputs, metrics, outputs, and review state stay visible from experiment to follow-through.",
           },
           {
-            title: "QuantLab Core",
-            desc: "CLI-first engine that executes runs, persists artifacts, and keeps the contract explicit.",
+            title: "Supervised execution",
+            desc: "Automation only appears after the system is readable, controlled, and ready for review.",
           },
         ].map((item) => (
           <article key={item.title} className="rounded-xl border border-border bg-card p-5 card-hover">
             <p className="font-mono text-[11px] uppercase tracking-widest text-primary">{item.title}</p>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.desc}</p>
-          </article>
-        ))}
-      </div>
-
-      <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        {coreEntities.map((entity) => (
-          <article key={entity.name} className="rounded-lg border border-border bg-card p-5 card-hover">
-            <p className="font-mono text-xs text-primary">{entity.name}</p>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{entity.description}</p>
           </article>
         ))}
       </div>
