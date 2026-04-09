@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="leading-tight">
             <span className="block text-lg font-semibold text-heading">QuantLab Research</span>
             <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-              QuantLab Core / Quant Pulse
+              QuantLab ecosystem
             </span>
           </div>
         </a>

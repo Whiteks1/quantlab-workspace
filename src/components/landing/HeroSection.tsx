@@ -9,16 +9,16 @@ const badges = [
 ];
 
 const surfaceItems = [
-  ["signal.json", "Upstream note"],
+  ["signal.json", "Research brief"],
   ["report.json", "Canonical output"],
   ["compare.md", "Decision surface"],
   ["metadata.json", "Run contract"],
 ];
 
 const runtimeItems = [
-  { label: "signal", value: "Quant Pulse" },
+  { label: "product", value: "QuantLab Research" },
   { label: "engine", value: "QuantLab Core" },
-  { label: "surface", value: "QuantLab Research" },
+  { label: "model", value: "Supervised execution" },
 ];
 
 const HeroSection = () => (
@@ -35,8 +35,8 @@ const HeroSection = () => (
             <span className="text-gradient">Execution you can supervise.</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            QuantLab Research is the public surface of a reproducible quant workflow. It explains how
-            signals become runs, how runs become evidence, and where supervision stays mandatory.
+            QuantLab Research is a local-first quantitative research product for explicit hypotheses,
+            traceable runs, reviewable artifacts, and disciplined progression into supervised execution.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">

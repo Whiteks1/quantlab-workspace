@@ -4,13 +4,20 @@ This document explains the product structure that the QuantLab Research landing 
 
 ## Product sentence
 
-QuantLab Research is the public-facing explanation layer for a reproducible quantitative research system with supervised operational boundaries.
+QuantLab Research is the public quantitative research product inside the broader QuantLab ecosystem, with supervised operational boundaries and reviewable outputs.
+
+## Brand architecture
+
+- QuantLab is the umbrella ecosystem.
+- QuantLab Research is the research product presented in this repo.
+- QuantPulse is a sibling signal product in the same ecosystem.
+- QuantLab Core is the internal engine that executes and preserves research continuity.
 
 ## Core layers
 
 ### QuantLab Research
 
-The public surface.
+The public research product.
 
 - explains the workflow
 - presents evidence and outputs
@@ -19,20 +26,20 @@ The public surface.
 
 ### QuantLab Core
 
-The research and execution engine.
+The internal research and execution engine.
 
 - runs experiments and sweeps
 - persists canonical artifacts
 - maintains continuity across runs and paper sessions
 - owns execution-side truth
 
-### Quant Pulse
+### QuantPulse
 
-The signal and hypothesis layer.
+The sibling signal product.
 
-- frames research intent
-- captures upstream notes and context
-- proposes what should be tested next
+- surfaces signal and context
+- helps prioritize what should be researched next
+- does not sit inside QuantLab Research as an internal module
 
 ## Core goal
 
@@ -42,6 +49,7 @@ That requires:
 
 - a clear public explanation layer
 - a reproducible execution layer
+- a clear ecosystem relationship between products
 - explicit boundaries between research, paper continuation, and execution safety
 
 ## Non-goals
@@ -51,7 +59,7 @@ This repo does not try to:
 - rebuild the full desktop shell
 - replace the upstream QuantLab runtime docs
 - simulate live operations in the public site
-- collapse QuantLab Research, QuantLab Core, and Quant Pulse into one vague product label
+- collapse QuantLab Research, QuantLab Core, and QuantPulse into one vague product label
 
 ## Authority model
 
@@ -69,18 +77,19 @@ This repo does not try to:
 - artifact truth
 - paper and execution boundaries
 
-### Quant Pulse owns
+### QuantPulse owns
 
-- signal intake
-- upstream research framing
+- signal prioritization
+- context surfaces
 - early hypothesis shaping
 
 ## Public architecture modules
 
 The landing currently presents these modules:
 
-- Quant Pulse
+- QuantLab
 - QuantLab Research
+- QuantPulse
 - QuantLab Core
 - Artifacts
 - Compare
