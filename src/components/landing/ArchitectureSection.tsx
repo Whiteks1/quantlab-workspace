@@ -10,8 +10,9 @@ const ArchitectureSection = () => (
             Clear layers, clear responsibilities
           </h2>
           <p className="mt-4 text-muted-foreground">
-            QuantLab Research, QuantLab Core, and Quant Pulse each have a distinct role. The public site
-            stays clear about that separation instead of collapsing everything into one vague product story.
+            QuantLab Research sits inside a broader QuantLab ecosystem. QuantLab Core powers execution
+            discipline, and QuantPulse remains a sibling product rather than a hidden submodule of this
+            public site.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">

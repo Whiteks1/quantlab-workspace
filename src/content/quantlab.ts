@@ -10,21 +10,21 @@ export const productLinks = {
 export const brandLayers = [
   {
     title: "QuantLab Research",
-    role: "Public surface",
+    role: "Research product",
     description:
-      "The public-facing layer that explains the research workflow, the outputs, and the operating boundaries.",
+      "The public product that explains the research workflow, the outputs, and the supervision model.",
   },
   {
     title: "QuantLab Core",
-    role: "Research engine",
+    role: "Internal engine",
     description:
-      "The execution layer that runs reproducible research and writes canonical outputs for review.",
+      "The internal execution layer that runs reproducible research and writes canonical outputs for review.",
   },
   {
-    title: "Quant Pulse",
-    role: "Signal layer",
+    title: "QuantPulse",
+    role: "Sibling signal product",
     description:
-      "The upstream layer where signals, context, and hypotheses are drafted before they are tested.",
+      "A sibling product in the QuantLab ecosystem that surfaces signal, context, and research priorities.",
   },
 ];
 
@@ -32,7 +32,7 @@ export const coreEntities = [
   {
     name: "Signal",
     description:
-      "An upstream research note that captures the hypothesis, context, and direction for investigation.",
+      "A research brief that captures the hypothesis, context, and direction for investigation.",
   },
   {
     name: "Experiment",
@@ -79,9 +79,9 @@ export const coreEntities = [
 export const workflowSteps = [
   {
     step: "01",
-    title: "Receive the signal",
+    title: "Frame the research brief",
     description:
-      "Quant Pulse proposes a hypothesis and turns it into a working note with enough context to proceed.",
+      "A hypothesis enters the workflow with enough context to become a concrete research brief.",
   },
   {
     step: "02",
@@ -123,19 +123,24 @@ export const workflowSteps = [
 
 export const architectureModules = [
   {
-    title: "Quant Pulse",
+    title: "QuantLab",
     description:
-      "Signal intake and upstream notes that frame what should be researched next.",
+      "The umbrella ecosystem that keeps product roles explicit instead of collapsing everything into one label.",
   },
   {
     title: "QuantLab Research",
     description:
-      "The public layer that explains the system, its outputs, and its boundaries.",
+      "The public product that explains the system, its outputs, and its supervision boundaries.",
+  },
+  {
+    title: "QuantPulse",
+    description:
+      "The sibling signal product that surfaces context and helps prioritize what should be researched next.",
   },
   {
     title: "QuantLab Core",
     description:
-      "The reproducible execution layer that runs research and preserves continuity between runs.",
+      "The reproducible internal engine that runs research and preserves continuity between runs.",
   },
   {
     title: "Artifacts",

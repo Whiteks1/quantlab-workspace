@@ -1,6 +1,6 @@
 # QuantLab Research Landing
 
-QuantLab Research is the public web surface for the QuantLab system. This repo contains the landing assets and implementation work for the public-facing explanation layer.
+QuantLab Research is the public web surface for the QuantLab ecosystem. This repo contains the landing assets and implementation work for the research product and its public explanation layer, including its relationship to QuantLab Core and QuantPulse.
 
 ## Git workflow
 

@@ -9,24 +9,24 @@ const EntityModelSection = () => (
           QuantLab Research explains a research system, not a trading front end
         </h2>
         <p className="mt-4 text-muted-foreground">
-          Quant Pulse frames the research question. QuantLab Core runs the work. QuantLab Research keeps
-          the system legible from the public side without pretending to be the runtime itself.
+          QuantLab Research is the public product. QuantLab Core runs the work. QuantPulse is a sibling
+          product in the same ecosystem, not a hidden layer inside the landing itself.
         </p>
       </div>
 
       <div className="mt-10 grid gap-4 sm:grid-cols-3">
         {[
           {
-            title: "Quant Pulse",
-            desc: "Upstream signal layer where hypotheses, context, and editorial notes are drafted.",
+            title: "QuantLab Research",
+            desc: "Public product that explains the workflow, exposes evidence, and stays honest about supervision boundaries.",
+          },
+          {
+            title: "QuantPulse",
+            desc: "Sibling signal product that surfaces context, priorities, and research direction inside the wider QuantLab ecosystem.",
           },
           {
             title: "QuantLab Core",
             desc: "CLI-first engine that executes runs, persists artifacts, and keeps the contract explicit.",
-          },
-          {
-            title: "QuantLab Research",
-            desc: "Public site that explains the workflow and exposes evidence without simulating operations.",
           },
         ].map((item) => (
           <article key={item.title} className="rounded-xl border border-border bg-card p-5 card-hover">
