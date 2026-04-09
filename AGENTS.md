@@ -11,7 +11,7 @@ Working rules for humans and coding agents in this repo.
 - Keep `npm` as the only package manager in active use.
 - Treat `package-lock.json` as the only lockfile.
 - Do not reintroduce `bun.lockb`, `bun.lock`, or alternate dependency locks.
-- Do not use `Lovable`, `demo comercial`, or `QuantLab Workspace` in public copy.
+- Do not use legacy vendor branding, `demo comercial`, or `QuantLab Workspace` in public copy.
 - Preserve the brand architecture:
   - `QuantLab Research` = public surface.
   - `QuantLab Core` = engine.
