@@ -21,7 +21,7 @@ Status: completed
 Delivered:
 
 - hero and positioning for `QuantLab Research`
-- explicit separation between `QuantLab Research`, `QuantLab Core`, and `Quant Pulse`
+- explicit separation between `QuantLab Research`, `QuantLab Core`, and `QuantPulse`
 - public-facing navigation and section composition
 
 Implemented in:
@@ -36,15 +36,13 @@ Status: completed
 
 Delivered:
 
-- entity model for signal, experiment, run, sweep, comparison, candidate, baseline, and paper session
-- architecture module map
+- concise product-definition block for explicit hypotheses, traceable runs, and supervised execution
 - workflow from hypothesis to paper promotion
 
 Implemented in:
 
 - [`src/content/quantlab.ts`](./src/content/quantlab.ts)
 - [`src/components/landing/EntityModelSection.tsx`](./src/components/landing/EntityModelSection.tsx)
-- [`src/components/landing/ArchitectureSection.tsx`](./src/components/landing/ArchitectureSection.tsx)
 - [`src/components/landing/WorkflowSection.tsx`](./src/components/landing/WorkflowSection.tsx)
 
 ### Phase 3. Evidence and artifact contract
@@ -62,7 +60,6 @@ Delivered:
 Implemented in:
 
 - [`src/components/landing/ProductPreview.tsx`](./src/components/landing/ProductPreview.tsx)
-- [`src/components/landing/ArtifactsSection.tsx`](./src/components/landing/ArtifactsSection.tsx)
 - [`public/evidence/desktop/README.md`](./public/evidence/desktop/README.md)
 
 ### Phase 4. Local repo documentation and workflow hygiene

@@ -1,9 +1,7 @@
 export const productLinks = {
   repository: "https://github.com/Whiteks1/quantlab",
   docsRoot: "https://github.com/Whiteks1/quantlab/tree/main/docs",
-  architecture: "https://github.com/Whiteks1/quantlab/blob/main/docs/quantlab-desktop-v1.md",
   outputs: "https://github.com/Whiteks1/quantlab/blob/main/README.md#canonical-artifact-structure",
-  cli: "https://github.com/Whiteks1/quantlab/blob/main/docs/cli.md",
   runArtifacts: "https://github.com/Whiteks1/quantlab/blob/main/docs/run-artifact-contract.md",
 };
 
@@ -100,54 +98,6 @@ export const workflowSteps = [
     title: "Decide continuity",
     description:
       "Only promote what survives visible validation.",
-  },
-];
-
-export const architectureModules = [
-  {
-    title: "Research workflow",
-    description:
-      "The public workflow that turns hypotheses into runs, evidence, and supervised decisions.",
-  },
-  {
-    title: "QuantLab Research",
-    description:
-      "The public product that explains the system, its outputs, and its supervision boundaries.",
-  },
-  {
-    title: "QuantPulse",
-    description:
-      "A sibling product that can surface context when it helps explain where research priorities originate.",
-  },
-  {
-    title: "QuantLab Core",
-    description:
-      "The reproducible internal engine that runs research and preserves continuity between runs.",
-  },
-  {
-    title: "Artifacts",
-    description:
-      "Canonical outputs that stay inspectable by both operators and external tooling.",
-  },
-  {
-    title: "Compare",
-    description:
-      "A review surface for baseline checks, shortlists, and direct result comparison.",
-  },
-  {
-    title: "Boundary",
-    description:
-      "Clear boundaries between research, paper continuation, and execution safety.",
-  },
-  {
-    title: "CLI / automation",
-    description:
-      "Stable CLI entry points and automation hooks that do not blur system control.",
-  },
-  {
-    title: "Docs / evidence",
-    description:
-      "Documentation and evidence surfaces that keep the system understandable and reviewable.",
   },
 ];
 

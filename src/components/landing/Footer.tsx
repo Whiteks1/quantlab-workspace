@@ -12,9 +12,6 @@ const Footer = () => (
         </div>
 
         <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-          <span className="font-mono text-[10px] uppercase tracking-[0.24em] text-muted-foreground/70">
-            Secondary links
-          </span>
           <a
             href={productLinks.docsRoot}
             target="_blank"

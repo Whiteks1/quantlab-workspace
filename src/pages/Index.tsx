@@ -1,6 +1,6 @@
 import Navbar from "@/components/landing/Navbar";
 import HeroSection from "@/components/landing/HeroSection";
-import SystemSection from "@/components/landing/EntityModelSection";
+import ProductDefinitionSection from "@/components/landing/EntityModelSection";
 import WorkflowSection from "@/components/landing/WorkflowSection";
 import PrinciplesSection from "@/components/landing/PrinciplesSection";
 import ProductPreview from "@/components/landing/ProductPreview";
@@ -11,7 +11,7 @@ const Index = () => (
   <div className="min-h-screen bg-background">
     <Navbar />
     <HeroSection />
-    <SystemSection />
+    <ProductDefinitionSection />
     <WorkflowSection />
     <ProductPreview />
     <PrinciplesSection />
