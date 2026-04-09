@@ -3,7 +3,6 @@ import HeroSection from "@/components/landing/HeroSection";
 import SystemSection from "@/components/landing/EntityModelSection";
 import ArchitectureSection from "@/components/landing/ArchitectureSection";
 import WorkflowSection from "@/components/landing/WorkflowSection";
-import ArtifactsSection from "@/components/landing/ArtifactsSection";
 import PrinciplesSection from "@/components/landing/PrinciplesSection";
 import ProductPreview from "@/components/landing/ProductPreview";
 import FinalCTA from "@/components/landing/FinalCTA";
@@ -17,7 +16,6 @@ const Index = () => (
     <ArchitectureSection />
     <WorkflowSection />
     <ProductPreview />
-    <ArtifactsSection />
     <PrinciplesSection />
     <FinalCTA />
     <Footer />

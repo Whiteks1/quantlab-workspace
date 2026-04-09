@@ -6,44 +6,28 @@ const evidenceBasePath = `${import.meta.env.BASE_URL}evidence/desktop/`;
 
 const evidenceCards = [
   {
-    id: "workspace-overview",
-    title: "Research overview",
-    value: "Research surface",
-    file: "workspace-overview.png",
-    alt: "QuantLab Research desktop overview",
-    desc: "The top-level research view shows navigation, evidence, and the main review entry points.",
-  },
-  {
-    id: "runs",
-    title: "Runs",
-    value: "Repeatable sessions",
-    file: "runs.png",
-    alt: "QuantLab desktop runs list",
-    desc: "A live view of the runs table and status hierarchy in the desktop product.",
-  },
-  {
     id: "run-detail",
-    title: "Run detail",
+    title: "Run inspection",
     value: "Inputs, metrics, notes",
     file: "run-detail.png",
     alt: "QuantLab desktop run detail",
-    desc: "Focused context for a single run, with the contract visible and reviewable.",
+    desc: "Inspect one run with visible inputs, metrics, and review context in the same surface.",
   },
   {
     id: "artifacts",
-    title: "Artifacts",
-    value: "report.json / config.json",
+    title: "Artifact review",
+    value: "Canonical outputs",
     file: "artifacts.png",
     alt: "QuantLab desktop artifacts view",
-    desc: "Canonical outputs that can be inspected without opening the engine itself.",
+    desc: "Review canonical outputs without losing the run context that produced them.",
   },
   {
     id: "validation",
-    title: "Validation",
+    title: "Validation boundary",
     value: "Supervised review",
     file: "validation.png",
     alt: "QuantLab desktop validation view",
-    desc: "Boundary state that shows what passed validation and what still needs review.",
+    desc: "See what passed review, what still needs supervision, and where continuity stops.",
   },
 ];
 
@@ -55,14 +39,13 @@ const ProductPreview = () => {
     <section className="border-t border-border py-24" id="evidence">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="font-mono text-xs uppercase tracking-widest text-primary">Desktop evidence</p>
+          <p className="font-mono text-xs uppercase tracking-widest text-primary">Product proof</p>
           <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-            Real desktop surfaces from the repo, not placeholder UI
+            Real product surfaces, not placeholder UI
           </h2>
           <p className="mt-4 text-muted-foreground">
-            The landing now points to committed product evidence: research overview, runs, run detail,
-            artifacts, and validation. The web layer explains the system by showing the actual surfaces
-            already stored in the repository.
+            QuantLab Research is grounded in actual review surfaces for run inspection, artifact review,
+            and validation boundaries.
           </p>
         </div>
 
@@ -75,7 +58,7 @@ const ProductPreview = () => {
                 <span className="h-2.5 w-2.5 rounded-full bg-success/60" />
               </div>
               <span className="ml-3 font-mono text-xs text-muted-foreground">
-                Canonical desktop evidence / {activeEvidence.title.toLowerCase()}
+                Product proof / {activeEvidence.title.toLowerCase()}
               </span>
             </div>
 
@@ -89,7 +72,7 @@ const ProductPreview = () => {
               <div className="rounded-lg border border-border bg-card p-4">
                 <p className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-primary">
                   <ImageIcon size={14} />
-                  Active evidence
+                  Proof surface
                 </p>
                 <h3 className="mt-2 text-base font-semibold text-heading">{activeEvidence.value}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{activeEvidence.desc}</p>
@@ -98,12 +81,14 @@ const ProductPreview = () => {
               <div className="rounded-lg border border-border bg-card p-4">
                 <p className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-primary">
                   <Sparkles size={14} />
-                  Repo asset
+                  Why it matters
                 </p>
-                <p className="mt-2 font-mono text-sm text-heading">{activeEvidence.file}</p>
+                <p className="mt-2 text-sm text-heading">
+                  Product proof should show readable decisions, not just polished UI.
+                </p>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  This surface is served directly from the canonical evidence assets committed under
-                  `public/evidence/desktop/`.
+                  These surfaces demonstrate that QuantLab Research already supports review, continuity,
+                  and visible operational boundaries.
                 </p>
               </div>
             </div>
@@ -144,12 +129,12 @@ const ProductPreview = () => {
             })}
 
             <a
-              href={productLinks.architecture}
+              href={productLinks.docsRoot}
               target="_blank"
               rel="noreferrer"
               className="inline-flex w-full items-center justify-center gap-2 rounded-md border border-border px-4 py-3 text-sm text-foreground transition-colors hover:border-primary/30 hover:bg-secondary"
             >
-              Explore the product docs
+              Read product docs
               <ArrowUpRight size={16} />
             </a>
           </aside>
