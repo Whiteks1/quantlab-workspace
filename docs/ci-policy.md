@@ -4,7 +4,11 @@ This document defines the expected validation and merge discipline for the Quant
 
 ## CI baseline
 
-There is not yet a committed GitHub Actions workflow in this repo. The current documented validation baseline is:
+The repository CI workflow is defined in:
+
+- [`.github/workflows/ci.yml`](../.github/workflows/ci.yml)
+
+The current baseline job runs:
 
 ```bash
 npm ci
@@ -15,11 +19,11 @@ npm test
 
 ## Required checks
 
-The intended required check for pull requests, once repo automation exists, is:
+The intended required check for pull requests is:
 
 - `Build, Lint, and Test`
 
-If GitHub branch protection is enabled later, this check should be marked as required before merge.
+If GitHub branch protection is enabled, this check should be marked as required before merge.
 
 ## Merge policy
 
@@ -46,7 +50,6 @@ Before merge, confirm that:
 Do not merge yet if:
 
 - CI is failing for the slice
-- the slice depends on automation that is not yet present in the repo
 - the PR mixes unrelated surfaces or concerns
 - required screenshots or evidence assets are still missing for a slice that depends on them
 - the branch has drifted into follow-up work that belongs in a separate issue

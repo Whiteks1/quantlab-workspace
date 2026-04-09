@@ -9,7 +9,7 @@ The landing is currently in the evidence-and-docs hardening stage.
 - Real desktop evidence assets are committed and integrated into the landing.
 - Contributor workflow templates are in place for slices, maintenance tasks, and bug reports.
 - Local documentation now exists in-repo instead of living only inside a preserved stash.
-- CI and merge discipline are documented, but GitHub Actions automation is still not present in this repo.
+- CI validation is now automated in GitHub Actions for pushes, pull requests, and manual dispatch.
 
 ## Phase breakdown
 
@@ -94,17 +94,17 @@ Status: partially completed
 
 Delivered:
 
+- GitHub Actions workflow that runs `npm ci`, `npm run build`, `npm run lint`, and `npm test`
 - local CI and merge policy documentation for required checks and merge discipline
 
 Still missing:
 
-- GitHub Actions workflow that runs the repo validation automatically
 - branch protection configuration in GitHub itself
 - deployment workflow for the static site
 
 ## Recommended next slices
 
-1. Add GitHub Actions validation so the documented CI policy is enforced by the repo itself.
+1. Configure branch protection so the CI check becomes enforced before merge.
 2. Add deployment automation for the static site if this repo will own its own release path.
 3. Decide whether the landing should eventually expose local HTML docs instead of GitHub markdown pages for the documentation links.
 4. Decide whether the repo should pin a specific branch-protection and required-check configuration in GitHub admin settings.
