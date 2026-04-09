@@ -6,11 +6,10 @@ const WorkflowSection = () => (
       <div className="mx-auto max-w-3xl text-center">
         <p className="font-mono text-xs uppercase tracking-widest text-primary">Workflow</p>
         <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-          Hypothesis → Run → Artifacts → Validation
+          From hypothesis to supervised review
         </h2>
         <p className="mt-4 text-muted-foreground">
-          The system turns a signal into a repeatable run, stores canonical outputs, and only then lets
-          validation decide whether the result deserves continuity.
+          QuantLab Research keeps the path from idea to decision visible, repeatable, and reviewable.
         </p>
       </div>
 

@@ -1,12 +1,9 @@
-import { Repeat, Eye, Compass, Lock, Milestone, Zap } from "lucide-react";
+import { Repeat, Eye, Lock } from "lucide-react";
 
 const principles = [
-  { icon: Repeat, title: "Reproducibility", desc: "Every execution, comparison, and handoff should be traceable and repeatable." },
-  { icon: Eye, title: "Auditability", desc: "Artifacts and system state should remain readable and verifiable." },
-  { icon: Compass, title: "Operational clarity", desc: "The public surface should favor hierarchy, context, and continuity over vague product language." },
-  { icon: Lock, title: "Controlled execution", desc: "Execution stays supervised and explicit instead of being presented as a black-box automation claim." },
-  { icon: Milestone, title: "Explicit boundaries", desc: "Research, pre-trade, paper, and execution safety are separated with honest criteria." },
-  { icon: Zap, title: "Gradual automation", desc: "Automation only appears after the technical contract is already stable." },
+  { icon: Repeat, title: "Reproducible", desc: "Research should stay repeatable from brief to review." },
+  { icon: Eye, title: "Auditable", desc: "Artifacts and state should remain readable and verifiable." },
+  { icon: Lock, title: "Controlled", desc: "Execution stays supervised instead of being presented as automation theater." },
 ];
 
 const PrinciplesSection = () => (
@@ -15,8 +12,11 @@ const PrinciplesSection = () => (
       <div className="mx-auto max-w-2xl text-center">
         <p className="font-mono text-xs uppercase tracking-widest text-primary">Principles</p>
         <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-          Reproducible, traceable, supervised, local-first
+          Built for clarity, not market theater
         </h2>
+        <p className="mt-4 text-muted-foreground">
+          Local-first. Traceable. Reviewable. Supervised.
+        </p>
       </div>
 
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
