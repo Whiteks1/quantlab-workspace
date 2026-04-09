@@ -118,7 +118,7 @@ const HeroSection = () => (
                     </p>
                   </div>
                   <a
-                    href="#outputs"
+                    href="#evidence"
                     className="inline-flex items-center gap-2 rounded-md border border-border px-3 py-2 text-xs font-medium text-foreground transition-colors hover:border-primary/30 hover:bg-secondary"
                   >
                     Inspect outputs
