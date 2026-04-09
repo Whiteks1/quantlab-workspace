@@ -1,21 +1,21 @@
 import { Repeat, Eye, Compass, Lock, Milestone, Zap } from "lucide-react";
 
 const principles = [
-  { icon: Repeat, title: "Consistencia", desc: "La marca suena igual en la home, el portfolio y cada demo." },
-  { icon: Eye, title: "Evidencia", desc: "Lo que se dice se apoya con casos, enlaces o pruebas visibles." },
-  { icon: Compass, title: "Claridad", desc: "Cada bloque responde a una sola intención y evita el ruido visual." },
-  { icon: Lock, title: "Control", desc: "La estructura es ligera, editable y fácil de mantener desde un único sitio." },
-  { icon: Milestone, title: "Sistema", desc: "La web se piensa como base reutilizable, no como una pieza cerrada." },
-  { icon: Zap, title: "Velocidad", desc: "Se publica rápido, se corrige rápido y se amplía sin rehacerlo todo." },
+  { icon: Repeat, title: "Reproducibility", desc: "Every execution, comparison, and handoff should be traceable and repeatable." },
+  { icon: Eye, title: "Auditability", desc: "Artifacts and system state should remain readable and verifiable." },
+  { icon: Compass, title: "Operational clarity", desc: "The public surface should favor hierarchy, context, and continuity over vague product language." },
+  { icon: Lock, title: "Controlled execution", desc: "Execution stays supervised and explicit instead of being presented as a black-box automation claim." },
+  { icon: Milestone, title: "Explicit boundaries", desc: "Research, pre-trade, paper, and execution safety are separated with honest criteria." },
+  { icon: Zap, title: "Gradual automation", desc: "Automation only appears after the technical contract is already stable." },
 ];
 
 const PrinciplesSection = () => (
   <section className="py-24 border-t border-border" id="principles">
     <div className="mx-auto max-w-6xl px-6">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="font-mono text-xs uppercase tracking-widest text-primary">Principios</p>
+        <p className="font-mono text-xs uppercase tracking-widest text-primary">Principles</p>
         <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
-          Construido para vender con orden, no para impresionar sin rumbo
+          Reproducible, traceable, supervised, local-first
         </h2>
       </div>
 

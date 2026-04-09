@@ -1,15 +1,11 @@
 import Navbar from "@/components/landing/Navbar";
 import HeroSection from "@/components/landing/HeroSection";
-import ProblemSection from "@/components/landing/ProblemSection";
-import FeaturesSection from "@/components/landing/FeaturesSection";
-import PortfolioSection from "@/components/landing/PortfolioSection";
+import SystemSection from "@/components/landing/EntityModelSection";
+import ArchitectureSection from "@/components/landing/ArchitectureSection";
 import WorkflowSection from "@/components/landing/WorkflowSection";
-import ProductLayers from "@/components/landing/ProductLayers";
+import ArtifactsSection from "@/components/landing/ArtifactsSection";
 import PrinciplesSection from "@/components/landing/PrinciplesSection";
-import SafetyPath from "@/components/landing/SafetyPath";
 import ProductPreview from "@/components/landing/ProductPreview";
-import DifferentiationSection from "@/components/landing/DifferentiationSection";
-import RoadmapSection from "@/components/landing/RoadmapSection";
 import FinalCTA from "@/components/landing/FinalCTA";
 import Footer from "@/components/landing/Footer";
 
@@ -17,16 +13,12 @@ const Index = () => (
   <div className="min-h-screen bg-background">
     <Navbar />
     <HeroSection />
-    <ProblemSection />
-    <FeaturesSection />
-    <PortfolioSection />
+    <SystemSection />
+    <ArchitectureSection />
     <WorkflowSection />
-    <ProductLayers />
-    <PrinciplesSection />
-    <SafetyPath />
     <ProductPreview />
-    <DifferentiationSection />
-    <RoadmapSection />
+    <ArtifactsSection />
+    <PrinciplesSection />
     <FinalCTA />
     <Footer />
   </div>
