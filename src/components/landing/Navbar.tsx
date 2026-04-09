@@ -14,37 +14,37 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/85 backdrop-blur-xl">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <a href="#home" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-[0.35rem] border border-primary/20 bg-primary/10">
+      <div className="mx-auto flex h-[4.5rem] max-w-6xl items-center justify-between px-6">
+        <a href="#home" className="flex items-center gap-3">
+          <div className="flex h-9 w-9 items-center justify-center rounded-[0.45rem] border border-primary/20 bg-primary/10">
             <span className="font-mono text-sm font-bold text-primary">QL</span>
           </div>
           <div className="leading-tight">
-            <span className="block text-lg font-semibold text-heading">QuantLab Research</span>
-            <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
+            <span className="block text-lg font-semibold tracking-tight text-heading">QuantLab Research</span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-muted-foreground">
               Research product
             </span>
           </div>
         </a>
 
-        <div className="hidden items-center gap-6 lg:flex">
+        <div className="hidden items-center gap-8 lg:flex">
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground/95"
             >
               {link.label}
             </a>
           ))}
         </div>
 
-        <div className="hidden items-center gap-4 lg:flex">
+        <div className="hidden items-center gap-5 lg:flex">
           <a
             href={productLinks.docsRoot}
             target="_blank"
             rel="noreferrer"
-            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground/95"
           >
             Docs
           </a>
@@ -52,7 +52,7 @@ const Navbar = () => {
             href={productLinks.repository}
             target="_blank"
             rel="noreferrer"
-            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground/95"
           >
             Source
           </a>

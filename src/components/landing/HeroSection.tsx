@@ -21,33 +21,33 @@ const runtimeItems = [
 ];
 
 const HeroSection = () => (
-  <section className="relative overflow-hidden pt-32 pb-20" id="home">
+  <section className="relative overflow-hidden pt-36 pb-24 lg:pt-40 lg:pb-28" id="home">
     <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,hsl(205_70%_48%/0.14),transparent_42%),radial-gradient(circle_at_bottom_right,hsl(162_60%_45%/0.1),transparent_36%)]" />
     <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
 
     <div className="relative mx-auto max-w-6xl px-6">
-      <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
-        <div>
+      <div className="grid items-center gap-14 lg:grid-cols-[1.02fr_0.98fr] lg:gap-16">
+        <div className="max-w-xl">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">QuantLab Research</p>
-          <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-heading sm:text-5xl lg:text-6xl">
+          <h1 className="mt-5 text-4xl font-bold leading-[0.96] tracking-tight text-heading sm:text-6xl lg:text-[4.6rem]">
             Research you can inspect.{" "}
             <span className="text-gradient">Execution you can supervise.</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-7 max-w-xl text-lg leading-relaxed text-muted-foreground">
             QuantLab Research is a local-first quantitative research product for explicit hypotheses,
             traceable runs, reviewable artifacts, and supervised execution.
           </p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <a
               href="#evidence"
-              className="rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20"
+              className="rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20"
             >
               See product proof
             </a>
             <a
               href="#workflow"
-              className="rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary/30 hover:bg-secondary"
+              className="rounded-xl border border-border px-6 py-3.5 text-sm font-medium text-foreground transition-colors hover:border-primary/30 hover:bg-secondary"
             >
               Explore the workflow
             </a>
@@ -57,7 +57,7 @@ const HeroSection = () => (
             {badges.map((badge) => (
               <span
                 key={badge.label}
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-3 py-1.5 text-xs font-medium text-secondary-foreground"
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-3.5 py-1.5 text-xs font-medium text-secondary-foreground"
               >
                 <badge.icon size={13} className="text-primary" />
                 {badge.label}
@@ -67,10 +67,10 @@ const HeroSection = () => (
 
         </div>
 
-        <div className="relative">
-          <div className="absolute -inset-4 rounded-[28px] bg-primary/10 blur-2xl" />
-          <div className="relative overflow-hidden rounded-[28px] border border-border bg-card shadow-2xl shadow-primary/10">
-            <div className="flex items-center gap-2 border-b border-border px-4 py-3">
+        <div className="relative lg:translate-y-2">
+          <div className="absolute -inset-5 rounded-[32px] bg-primary/10 blur-3xl" />
+          <div className="relative overflow-hidden rounded-[30px] border border-border bg-card shadow-2xl shadow-primary/10">
+            <div className="flex items-center gap-2 border-b border-border px-5 py-3.5">
               <div className="flex gap-1.5">
                 <span className="h-2.5 w-2.5 rounded-full bg-destructive/60" />
                 <span className="h-2.5 w-2.5 rounded-full bg-warning/60" />
@@ -79,7 +79,7 @@ const HeroSection = () => (
               <span className="ml-3 font-mono text-xs text-muted-foreground">Research evidence / run_id: ql-2406</span>
             </div>
 
-            <div className="grid gap-4 p-5">
+            <div className="grid gap-4 p-6">
               <div className="rounded-2xl border border-border bg-background/70 p-5">
                 <div className="flex items-start justify-between gap-4">
                   <div>
@@ -102,7 +102,7 @@ const HeroSection = () => (
 
               <div className="grid gap-3 sm:grid-cols-3">
                 {runtimeItems.map((item) => (
-                  <div key={item.label} className="rounded-xl border border-border bg-background/70 p-4">
+                  <div key={item.label} className="rounded-xl border border-border bg-background/70 p-4.5">
                     <p className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">{item.label}</p>
                     <p className="mt-2 text-sm font-semibold text-heading">{item.value}</p>
                   </div>

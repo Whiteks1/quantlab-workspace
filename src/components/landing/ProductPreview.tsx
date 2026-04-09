@@ -36,9 +36,9 @@ const ProductPreview = () => {
   const activeEvidence = evidenceCards.find((card) => card.id === activeEvidenceId) ?? evidenceCards[0];
 
   return (
-    <section className="border-t border-border py-24" id="evidence">
+    <section className="border-t border-border py-24 lg:py-28" id="evidence">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-2xl text-center">
           <p className="font-mono text-xs uppercase tracking-widest text-primary">Product proof</p>
           <h2 className="mt-3 text-3xl font-bold text-heading sm:text-4xl">
             Real product surfaces, not placeholder UI
@@ -49,9 +49,9 @@ const ProductPreview = () => {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-          <article className="overflow-hidden rounded-2xl border border-border bg-card shadow-2xl shadow-primary/5">
-            <div className="flex items-center gap-2 border-b border-border px-4 py-3">
+        <div className="mt-14 grid gap-7 lg:grid-cols-[1.16fr_0.84fr] lg:gap-8">
+          <article className="overflow-hidden rounded-[28px] border border-border bg-card shadow-2xl shadow-primary/5">
+            <div className="flex items-center gap-2 border-b border-border px-5 py-3.5">
               <div className="flex gap-1.5">
                 <span className="h-2.5 w-2.5 rounded-full bg-destructive/60" />
                 <span className="h-2.5 w-2.5 rounded-full bg-warning/60" />
@@ -65,11 +65,11 @@ const ProductPreview = () => {
             <img
               src={`${evidenceBasePath}${activeEvidence.file}`}
               alt={activeEvidence.alt}
-              className="w-full border-b border-border object-cover"
+              className="aspect-[16/10] w-full border-b border-border object-cover"
             />
 
-            <div className="grid gap-3 bg-background/70 p-4 sm:grid-cols-2">
-              <div className="rounded-lg border border-border bg-card p-4">
+            <div className="grid gap-4 bg-background/70 p-5 sm:grid-cols-2">
+              <div className="rounded-xl border border-border bg-card p-5">
                 <p className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-primary">
                   <ImageIcon size={14} />
                   Proof surface
@@ -78,7 +78,7 @@ const ProductPreview = () => {
                 <p className="mt-2 text-sm text-muted-foreground">{activeEvidence.desc}</p>
               </div>
 
-              <div className="rounded-lg border border-border bg-card p-4">
+              <div className="rounded-xl border border-border bg-card p-5">
                 <p className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-widest text-primary">
                   <Sparkles size={14} />
                   Why it matters
@@ -94,7 +94,7 @@ const ProductPreview = () => {
             </div>
           </article>
 
-          <aside className="space-y-4">
+          <aside className="space-y-4 lg:space-y-5">
             {evidenceCards.map((card) => {
               const isActive = card.id === activeEvidence.id;
 
@@ -103,7 +103,7 @@ const ProductPreview = () => {
                   key={card.id}
                   type="button"
                   onClick={() => setActiveEvidenceId(card.id)}
-                  className={`w-full rounded-2xl border p-3 text-left transition-all ${
+                  className={`w-full rounded-[24px] border p-3.5 text-left transition-all ${
                     isActive
                       ? "border-primary/40 bg-secondary shadow-lg shadow-primary/5"
                       : "border-border bg-card card-hover"
@@ -119,7 +119,7 @@ const ProductPreview = () => {
                   <div className="mt-4 flex items-start justify-between gap-3">
                     <div>
                       <p className="font-mono text-[11px] uppercase tracking-widest text-primary">{card.title}</p>
-                      <h3 className="mt-2 text-base font-semibold text-heading">{card.value}</h3>
+                      <h3 className="mt-2 text-lg font-semibold text-heading">{card.value}</h3>
                     </div>
                     <Sparkles size={16} className="mt-0.5 text-primary" />
                   </div>
@@ -132,7 +132,7 @@ const ProductPreview = () => {
               href={productLinks.docsRoot}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-md border border-border px-4 py-3 text-sm text-foreground transition-colors hover:border-primary/30 hover:bg-secondary"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-border px-4 py-3.5 text-sm text-foreground transition-colors hover:border-primary/30 hover:bg-secondary"
             >
               Read product docs
               <ArrowUpRight size={16} />
