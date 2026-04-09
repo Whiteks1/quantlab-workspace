@@ -79,45 +79,27 @@ export const coreEntities = [
 export const workflowSteps = [
   {
     step: "01",
-    title: "Frame the research brief",
+    title: "Frame the brief",
     description:
-      "A hypothesis enters the workflow with enough context to become a concrete research brief.",
+      "Start with a concrete hypothesis and operating context.",
   },
   {
     step: "02",
-    title: "Define the inputs",
+    title: "Run the experiment",
     description:
-      "The strategy, universe, and configuration are defined as part of the run contract.",
+      "Launch a deterministic run or controlled sweep.",
   },
   {
     step: "03",
-    title: "Run the experiment or sweep",
+    title: "Inspect the outputs",
     description:
-      "QuantLab Core launches the concrete execution or the controlled batch of variants with deterministic output.",
+      "Review artifacts, metrics, and comparison surfaces.",
   },
   {
     step: "04",
-    title: "Persist artifacts",
+    title: "Decide continuity",
     description:
-      "Each execution writes metadata, config, metrics, report, and artifacts to a canonical path.",
-  },
-  {
-    step: "05",
-    title: "Compare results",
-    description:
-      "Runs and sweeps are reviewed through compare, shortlist, and baseline surfaces to filter noise quickly.",
-  },
-  {
-    step: "06",
-    title: "Select candidates",
-    description:
-      "What survives analysis enters an explicit decision layer before moving to paper.",
-  },
-  {
-    step: "07",
-    title: "Promote to paper",
-    description:
-      "Paper sessions extend research with their own operational continuity and health or status tracking.",
+      "Only promote what survives visible validation.",
   },
 ];
 
