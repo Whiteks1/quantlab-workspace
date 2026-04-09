@@ -23,6 +23,11 @@ The default slice workflow for this repo is:
 - [`.github/pull_request_template.md`](./.github/pull_request_template.md): PR checklist and scope controls
 - [`.github/ISSUE_TEMPLATE/maintenance.md`](./.github/ISSUE_TEMPLATE/maintenance.md): maintenance slice issue template
 - [`.github/ISSUE_TEMPLATE/bug_report.md`](./.github/ISSUE_TEMPLATE/bug_report.md): bug issue template
+- [`.github/workflows/ci.yml`](./.github/workflows/ci.yml): GitHub Actions validation for build, lint, and test
+
+## Merge enforcement
+
+`main` is protected. Pull requests must pass `Build, Lint, and Test` and be up to date before merge.
 
 ## Current evidence assets
 
