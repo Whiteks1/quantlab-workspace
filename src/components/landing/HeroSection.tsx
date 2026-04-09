@@ -1,4 +1,4 @@
-import { ArrowRight, BadgeCheck, Blocks, DatabaseZap, ShieldCheck } from "lucide-react";
+import { ArrowRight, BadgeCheck, Blocks, DatabaseZap, Monitor, ShieldCheck } from "lucide-react";
 
 const badges = [
   { icon: Blocks, label: "Local-first" },
@@ -64,6 +64,11 @@ const HeroSection = () => (
               </span>
             ))}
           </div>
+
+          <p className="mt-5 flex items-center gap-2 text-xs text-muted-foreground/60">
+            <Monitor size={12} className="shrink-0" />
+            <span>Also available as a local desktop surface — <strong className="font-medium text-muted-foreground/80">QuantLab Desktop</strong></span>
+          </p>
 
         </div>
 
