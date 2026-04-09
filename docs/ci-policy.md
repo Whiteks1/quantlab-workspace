@@ -19,11 +19,11 @@ npm test
 
 ## Required checks
 
-The intended required check for pull requests is:
+The currently enforced required check for pull requests on `main` is:
 
 - `Build, Lint, and Test`
 
-If GitHub branch protection is enabled, this check should be marked as required before merge.
+Branch protection is configured so `main` must be up to date and pass this check before merge.
 
 ## Merge policy
 
@@ -35,6 +35,15 @@ Use the following merge policy by default:
 4. CI must pass before merge when the environment allows it.
 5. Prefer squash merge for documentation, copy, workflow, and contract slices.
 6. Open a follow-up issue instead of stretching an almost-merged PR with unrelated scope.
+
+## Active branch protection
+
+The current GitHub configuration for `main` is:
+
+- require `Build, Lint, and Test`
+- require the branch to be up to date before merge
+- disallow force pushes
+- disallow branch deletion
 
 ## Review expectations
 
