@@ -39,25 +39,6 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="hidden items-center gap-5 lg:flex">
-          <a
-            href={productLinks.docsRoot}
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm text-muted-foreground transition-colors hover:text-foreground/95"
-          >
-            Docs
-          </a>
-          <a
-            href={productLinks.repository}
-            target="_blank"
-            rel="noreferrer"
-            className="text-sm text-muted-foreground transition-colors hover:text-foreground/95"
-          >
-            Source
-          </a>
-        </div>
-
         <button
           onClick={() => setOpen(!open)}
           className="text-foreground lg:hidden"
@@ -81,12 +62,12 @@ const Navbar = () => {
               </a>
             ))}
           </div>
-          <div className="mt-4 flex flex-col gap-2 border-t border-border pt-4">
+          <div className="mt-4 flex items-center gap-4 border-t border-border pt-4">
             <a
               href={productLinks.docsRoot}
               target="_blank"
               rel="noreferrer"
-              className="rounded-md border border-border px-4 py-2 text-center text-sm text-foreground"
+              className="text-xs uppercase tracking-[0.22em] text-muted-foreground transition-colors hover:text-foreground/95"
             >
               Docs
             </a>
@@ -94,7 +75,7 @@ const Navbar = () => {
               href={productLinks.repository}
               target="_blank"
               rel="noreferrer"
-              className="rounded-md border border-border px-4 py-2 text-center text-sm text-foreground"
+              className="text-xs uppercase tracking-[0.22em] text-muted-foreground transition-colors hover:text-foreground/95"
             >
               Source
             </a>
