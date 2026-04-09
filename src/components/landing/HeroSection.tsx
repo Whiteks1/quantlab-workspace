@@ -1,56 +1,146 @@
-import heroImage from "@/assets/hero-workspace.jpg";
-import { BadgeCheck, BarChart3, LayoutTemplate, Sparkles } from "lucide-react";
+import { ArrowRight, BadgeCheck, Blocks, DatabaseZap, ShieldCheck } from "lucide-react";
+import { brandLayers, productLinks } from "@/content/quantlab";
 
 const badges = [
-  { icon: LayoutTemplate, label: "Landing pages" },
-  { icon: Sparkles, label: "Portfolio" },
-  { icon: BarChart3, label: "Analytics" },
-  { icon: BadgeCheck, label: "Conversion" },
+  { icon: Blocks, label: "Local-first" },
+  { icon: DatabaseZap, label: "Traceable" },
+  { icon: ShieldCheck, label: "Supervised" },
+  { icon: BadgeCheck, label: "Reviewable" },
+];
+
+const surfaceItems = [
+  ["signal.json", "Upstream note"],
+  ["report.json", "Canonical output"],
+  ["compare.md", "Decision surface"],
+  ["metadata.json", "Run contract"],
+];
+
+const runtimeItems = [
+  { label: "signal", value: "Quant Pulse" },
+  { label: "engine", value: "QuantLab Core" },
+  { label: "surface", value: "QuantLab Research" },
 ];
 
 const HeroSection = () => (
-  <section className="relative pt-32 pb-20 overflow-hidden">
-    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(185_55%_45%/0.06),transparent_60%)]" />
+  <section className="relative overflow-hidden pt-32 pb-20" id="home">
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,hsl(205_70%_48%/0.14),transparent_42%),radial-gradient(circle_at_bottom_right,hsl(162_60%_45%/0.1),transparent_36%)]" />
+    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
+
     <div className="relative mx-auto max-w-6xl px-6">
-      <div className="mx-auto max-w-3xl text-center">
-        <p className="mb-4 font-mono text-xs uppercase tracking-widest text-primary">
-          Nexus Marketing Studio
-        </p>
-        <h1 className="text-4xl font-bold leading-tight tracking-tight text-heading sm:text-5xl lg:text-6xl">
-          Web comercial, mensajes claros y demos que{" "}
-          <span className="text-gradient">aceleran la conversión</span>
-        </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-          Construimos la capa comercial de tu marca: landing pages, portfolio, contenido y estructura de venta. QuantLab aparece aquí como caso de muestra, no como el proyecto completo.
-        </p>
+      <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+        <div>
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">QuantLab Research</p>
+          <h1 className="mt-4 text-4xl font-bold leading-tight tracking-tight text-heading sm:text-5xl lg:text-6xl">
+            Research you can inspect.{" "}
+            <span className="text-gradient">Execution you can supervise.</span>
+          </h1>
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+            QuantLab Research is the public surface of a reproducible quant workflow. It explains how
+            signals become runs, how runs become evidence, and where supervision stays mandatory.
+          </p>
 
-        <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <a href="#portfolio" className="rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20">
-            Ver portfolio
-          </a>
-          <a href="#services" className="rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary/30 hover:bg-secondary">
-            Explorar servicios
-          </a>
+          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="#architecture"
+              className="rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20"
+            >
+              View system
+            </a>
+            <a
+              href={productLinks.architecture}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary/30 hover:bg-secondary"
+            >
+              Explore architecture
+            </a>
+          </div>
+
+          <div className="mt-10 flex flex-wrap gap-3">
+            {badges.map((badge) => (
+              <span
+                key={badge.label}
+                className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-3 py-1.5 text-xs font-medium text-secondary-foreground"
+              >
+                <badge.icon size={13} className="text-primary" />
+                {badge.label}
+              </span>
+            ))}
+          </div>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-3">
+            {brandLayers.map((layer) => (
+              <div key={layer.title} className="rounded-xl border border-border bg-card/80 p-4">
+                <p className="font-mono text-[11px] uppercase tracking-widest text-primary">{layer.role}</p>
+                <p className="mt-2 text-sm font-semibold text-heading">{layer.title}</p>
+                <p className="mt-2 text-sm text-muted-foreground">{layer.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
-          {badges.map((b) => (
-            <span key={b.label} className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-3 py-1.5 text-xs font-medium text-secondary-foreground">
-              <b.icon size={13} className="text-primary" />
-              {b.label}
-            </span>
-          ))}
-        </div>
-      </div>
+        <div className="relative">
+          <div className="absolute -inset-4 rounded-[28px] bg-primary/10 blur-2xl" />
+          <div className="relative overflow-hidden rounded-[28px] border border-border bg-card shadow-2xl shadow-primary/10">
+            <div className="flex items-center gap-2 border-b border-border px-4 py-3">
+              <div className="flex gap-1.5">
+                <span className="h-2.5 w-2.5 rounded-full bg-destructive/60" />
+                <span className="h-2.5 w-2.5 rounded-full bg-warning/60" />
+                <span className="h-2.5 w-2.5 rounded-full bg-success/60" />
+              </div>
+              <span className="ml-3 font-mono text-xs text-muted-foreground">Evidence Surfaces / run_id: ql-2406</span>
+            </div>
 
-      <div className="mt-16 overflow-hidden rounded-xl border border-border shadow-2xl shadow-primary/5">
-        <img
-          src={heroImage}
-          alt="Nexus Marketing — espacio de trabajo comercial"
-          width={1920}
-          height={1080}
-          className="w-full"
-        />
+            <div className="grid gap-4 p-5">
+              <div className="rounded-2xl border border-border bg-background/70 p-5">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p className="font-mono text-[11px] uppercase tracking-widest text-primary">Evidence block</p>
+                    <h3 className="mt-2 text-lg font-semibold text-heading">Signal to evidence</h3>
+                  </div>
+                  <span className="rounded-full border border-primary/20 bg-primary/10 px-2.5 py-1 font-mono text-[10px] uppercase tracking-widest text-primary">
+                    reviewed
+                  </span>
+                </div>
+                <div className="mt-4 grid gap-3 sm:grid-cols-2">
+                  {surfaceItems.map(([artifact, label]) => (
+                    <div key={artifact} className="rounded-xl border border-border bg-card p-3">
+                      <p className="font-mono text-[11px] uppercase tracking-widest text-primary">{artifact}</p>
+                      <p className="mt-2 text-sm text-muted-foreground">{label}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="grid gap-3 sm:grid-cols-3">
+                {runtimeItems.map((item) => (
+                  <div key={item.label} className="rounded-xl border border-border bg-background/70 p-4">
+                    <p className="font-mono text-[11px] uppercase tracking-widest text-muted-foreground">{item.label}</p>
+                    <p className="mt-2 text-sm font-semibold text-heading">{item.value}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="rounded-2xl border border-border bg-background/70 p-5">
+                <div className="flex items-center justify-between gap-3">
+                  <div>
+                    <p className="font-mono text-[11px] uppercase tracking-widest text-primary">Run contract</p>
+                    <p className="mt-2 text-sm text-muted-foreground">
+                      Explicit inputs, repeatable outputs, and a visible handoff into review.
+                    </p>
+                  </div>
+                  <a
+                    href="#outputs"
+                    className="inline-flex items-center gap-2 rounded-md border border-border px-3 py-2 text-xs font-medium text-foreground transition-colors hover:border-primary/30 hover:bg-secondary"
+                  >
+                    Inspect outputs
+                    <ArrowRight size={14} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

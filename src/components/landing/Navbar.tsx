@@ -1,53 +1,107 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { productLinks } from "@/content/quantlab";
+
+const links = [
+  { label: "Research", href: "#home" },
+  { label: "System", href: "#system" },
+  { label: "Architecture", href: "#architecture" },
+  { label: "Workflow", href: "#workflow" },
+  { label: "Evidence", href: "#evidence" },
+  { label: "Artifacts", href: "#outputs" },
+  { label: "Principles", href: "#principles" },
+];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
-  const links = [
-    { label: "Servicios", href: "#services" },
-    { label: "Portfolio", href: "#portfolio" },
-    { label: "Proceso", href: "#process" },
-    { label: "Principios", href: "#principles" },
-    { label: "Roadmap", href: "#roadmap" },
-  ];
-
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/85 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <a href="#" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/10 border border-primary/20">
-            <span className="font-mono text-sm font-bold text-primary">N</span>
+        <a href="#home" className="flex items-center gap-2">
+          <div className="flex h-8 w-8 items-center justify-center rounded-[0.35rem] border border-primary/20 bg-primary/10">
+            <span className="font-mono text-sm font-bold text-primary">QL</span>
           </div>
-          <span className="text-lg font-semibold text-heading">Nexus Marketing</span>
+          <div className="leading-tight">
+            <span className="block text-lg font-semibold text-heading">QuantLab Research</span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
+              QuantLab Core / Quant Pulse
+            </span>
+          </div>
         </a>
 
-        <div className="hidden items-center gap-8 md:flex">
-          {links.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm text-muted-foreground transition-colors hover:text-foreground">
-              {l.label}
+        <div className="hidden items-center gap-6 lg:flex">
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              {link.label}
             </a>
           ))}
-          <a href="#contact" className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90">
-            Solicitar propuesta
+        </div>
+
+        <div className="hidden items-center gap-3 lg:flex">
+          <a
+            href={productLinks.repository}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-md border border-border px-4 py-2 text-sm text-foreground transition-colors hover:border-primary/30 hover:bg-secondary"
+          >
+            Repository
+          </a>
+          <a
+            href={productLinks.docsRoot}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            Documentation
           </a>
         </div>
 
-        <button onClick={() => setOpen(!open)} className="md:hidden text-foreground" aria-label="Menu">
+        <button
+          onClick={() => setOpen(!open)}
+          className="text-foreground lg:hidden"
+          aria-label="Menu"
+        >
           {open ? <X size={20} /> : <Menu size={20} />}
         </button>
       </div>
 
       {open && (
-        <div className="border-t border-border bg-background px-6 py-4 md:hidden">
-          {links.map((l) => (
-            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="block py-2 text-sm text-muted-foreground">
-              {l.label}
+        <div className="border-t border-border bg-background px-6 py-4 lg:hidden">
+          <div className="space-y-2">
+            {links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="block py-2 text-sm text-muted-foreground"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+          <div className="mt-4 flex flex-col gap-2">
+            <a
+              href={productLinks.repository}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-md border border-border px-4 py-2 text-center text-sm text-foreground"
+            >
+              Repository
             </a>
-          ))}
-          <a href="#contact" className="mt-2 block rounded-md bg-primary px-4 py-2 text-center text-sm font-medium text-primary-foreground">
-            Solicitar propuesta
-          </a>
+            <a
+              href={productLinks.docsRoot}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-md bg-primary px-4 py-2 text-center text-sm font-medium text-primary-foreground"
+            >
+              Documentation
+            </a>
+          </div>
         </div>
       )}
     </nav>
