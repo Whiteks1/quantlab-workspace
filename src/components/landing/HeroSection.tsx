@@ -1,5 +1,4 @@
 import { ArrowRight, BadgeCheck, Blocks, DatabaseZap, ShieldCheck } from "lucide-react";
-import { brandLayers, productLinks } from "@/content/quantlab";
 
 const badges = [
   { icon: Blocks, label: "Local-first" },
@@ -36,23 +35,21 @@ const HeroSection = () => (
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             QuantLab Research is a local-first quantitative research product for explicit hypotheses,
-            traceable runs, reviewable artifacts, and disciplined progression into supervised execution.
+            traceable runs, reviewable artifacts, and supervised execution.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
-              href="#architecture"
+              href="#evidence"
               className="rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20"
             >
-              View system
+              See product proof
             </a>
             <a
-              href={productLinks.architecture}
-              target="_blank"
-              rel="noreferrer"
+              href="#workflow"
               className="rounded-lg border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-primary/30 hover:bg-secondary"
             >
-              Explore architecture
+              Explore the workflow
             </a>
           </div>
 
@@ -68,15 +65,6 @@ const HeroSection = () => (
             ))}
           </div>
 
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            {brandLayers.map((layer) => (
-              <div key={layer.title} className="rounded-xl border border-border bg-card/80 p-4">
-                <p className="font-mono text-[11px] uppercase tracking-widest text-primary">{layer.role}</p>
-                <p className="mt-2 text-sm font-semibold text-heading">{layer.title}</p>
-                <p className="mt-2 text-sm text-muted-foreground">{layer.description}</p>
-              </div>
-            ))}
-          </div>
         </div>
 
         <div className="relative">
