@@ -7,11 +7,11 @@ const evidenceBasePath = `${import.meta.env.BASE_URL}evidence/desktop/`;
 const evidenceCards = [
   {
     id: "workspace-overview",
-    title: "Workspace overview",
+    title: "Research overview",
     value: "Research surface",
     file: "workspace-overview.png",
-    alt: "QuantLab desktop workspace overview",
-    desc: "The top-level workspace shows the research surface, navigation, and the main review entry points.",
+    alt: "QuantLab Research desktop overview",
+    desc: "The top-level research view shows navigation, evidence, and the main review entry points.",
   },
   {
     id: "runs",
@@ -60,7 +60,7 @@ const ProductPreview = () => {
             Real desktop surfaces from the repo, not placeholder UI
           </h2>
           <p className="mt-4 text-muted-foreground">
-            The landing now points to committed product evidence: workspace overview, runs, run detail,
+            The landing now points to committed product evidence: research overview, runs, run detail,
             artifacts, and validation. The web layer explains the system by showing the actual surfaces
             already stored in the repository.
           </p>

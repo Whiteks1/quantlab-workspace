@@ -9,8 +9,8 @@ const EntityModelSection = () => (
           QuantLab Research explains a research system, not a trading front end
         </h2>
         <p className="mt-4 text-muted-foreground">
-          QuantLab Research is the public product. QuantLab Core runs the work. QuantPulse is a sibling
-          product in the same ecosystem, not a hidden layer inside the landing itself.
+          QuantLab Research is the public product. QuantLab Core runs the work. QuantPulse is secondary
+          context, not a hidden feature or competing headline inside this landing.
         </p>
       </div>
 
@@ -22,7 +22,7 @@ const EntityModelSection = () => (
           },
           {
             title: "QuantPulse",
-            desc: "Sibling signal product that surfaces context, priorities, and research direction inside the wider QuantLab ecosystem.",
+            desc: "Sibling signal product that may surface context and priorities, without becoming the main story of this site.",
           },
           {
             title: "QuantLab Core",

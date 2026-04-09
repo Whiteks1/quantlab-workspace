@@ -10,9 +10,8 @@ const ArchitectureSection = () => (
             Clear layers, clear responsibilities
           </h2>
           <p className="mt-4 text-muted-foreground">
-            QuantLab Research sits inside a broader QuantLab ecosystem. QuantLab Core powers execution
-            discipline, and QuantPulse remains a sibling product rather than a hidden submodule of this
-            public site.
+            QuantLab Research keeps the public story narrow. QuantLab Core powers execution discipline,
+            and QuantPulse appears only as sibling context where it helps explain the research workflow.
           </p>
         </div>
         <div className="flex flex-wrap gap-3">
