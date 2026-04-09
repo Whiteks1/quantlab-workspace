@@ -90,6 +90,9 @@ const ProductPreview = () => {
                   These surfaces demonstrate that QuantLab Research already supports review, continuity,
                   and visible operational boundaries.
                 </p>
+                <p className="mt-3 text-xs text-muted-foreground/60">
+                  Broker-facing validation remains supervised and explicit. Execution boundary currently validated against live broker workflows.
+                </p>
               </div>
             </div>
           </article>

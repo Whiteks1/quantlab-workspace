@@ -1,4 +1,6 @@
-import { productLinks } from "@/content/quantlab";
+import { productLinks, brandLayers } from "@/content/quantlab";
+
+const quantPulse = brandLayers.find((l) => l.title === "QuantPulse");
 
 const Footer = () => (
   <footer className="border-t border-border/80 py-8">
@@ -31,9 +33,21 @@ const Footer = () => (
         </div>
       </div>
 
-      <p className="text-xs text-muted-foreground/80">
-        © {new Date().getFullYear()} QuantLab Research.
-      </p>
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <p className="text-xs text-muted-foreground/80">
+          © {new Date().getFullYear()} QuantLab Research.
+        </p>
+        <p className="text-xs text-muted-foreground/50">
+          v0.1 · Stage D.2 · Paper ops operational · broker validation in progress
+        </p>
+      </div>
+
+      {quantPulse && (
+        <p className="text-xs text-muted-foreground/50">
+          <span className="font-medium text-muted-foreground/70">{quantPulse.title}</span>
+          {" — "}{quantPulse.description}
+        </p>
+      )}
     </div>
   </footer>
 );
