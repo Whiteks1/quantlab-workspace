@@ -68,3 +68,4 @@ Do not merge yet if:
 - [README.md](../README.md)
 - [AGENTS.md](../AGENTS.md)
 - [ROADMAP.md](../ROADMAP.md)
+- [`.github/workflows/deploy.yml`](../.github/workflows/deploy.yml)

@@ -24,10 +24,15 @@ The default slice workflow for this repo is:
 - [`.github/ISSUE_TEMPLATE/maintenance.md`](./.github/ISSUE_TEMPLATE/maintenance.md): maintenance slice issue template
 - [`.github/ISSUE_TEMPLATE/bug_report.md`](./.github/ISSUE_TEMPLATE/bug_report.md): bug issue template
 - [`.github/workflows/ci.yml`](./.github/workflows/ci.yml): GitHub Actions validation for build, lint, and test
+- [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml): GitHub Actions deployment to `gh-pages`
 
 ## Merge enforcement
 
 `main` is protected. Pull requests must pass `Build, Lint, and Test` and be up to date before merge.
+
+## Deployment
+
+Pushes to `main` now publish the production build to `gh-pages` automatically.
 
 ## Current evidence assets
 

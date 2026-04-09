@@ -10,6 +10,7 @@ The landing is currently in the evidence-and-docs hardening stage.
 - Contributor workflow templates are in place for slices, maintenance tasks, and bug reports.
 - Local documentation now exists in-repo instead of living only inside a preserved stash.
 - CI validation is now automated in GitHub Actions for pushes, pull requests, and manual dispatch.
+- GitHub Pages deployment is now automated from `main` to `gh-pages`.
 
 ## Phase breakdown
 
@@ -90,20 +91,17 @@ Implemented in:
 
 ### Phase 5. CI and release hardening
 
-Status: partially completed
+Status: completed
 
 Delivered:
 
 - GitHub Actions workflow that runs `npm ci`, `npm run build`, `npm run lint`, and `npm test`
 - local CI and merge policy documentation for required checks and merge discipline
 - branch protection on `main` requiring the `Build, Lint, and Test` check and an up-to-date branch before merge
-
-Still missing:
-
-- deployment workflow for the static site
+- GitHub Actions workflow that publishes the production build to `gh-pages`
 
 ## Recommended next slices
 
-1. Add deployment automation for the static site if this repo will own its own release path.
-2. Decide whether the landing should eventually expose local HTML docs instead of GitHub markdown pages for the documentation links.
-3. Decide whether to tighten branch protection further with required reviews or conversation resolution.
+1. Decide whether the landing should eventually expose local HTML docs instead of GitHub markdown pages for the documentation links.
+2. Decide whether to tighten branch protection further with required reviews or conversation resolution.
+3. Decide whether GitHub Pages should stay branch-based or move to the native Pages artifact deployment model.
