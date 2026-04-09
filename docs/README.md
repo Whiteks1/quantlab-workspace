@@ -6,6 +6,7 @@ These docs are local mirrors or condensed adaptations of the upstream QuantLab m
 
 ## Docs index
 
+- [brand-architecture.md](./brand-architecture.md): canonical scope rule for this repo as the public QuantLab Research surface
 - [architecture.md](./architecture.md): product layers, authority model, and why `QuantLab Research` exists as a public surface
 - [cli.md](./cli.md): compact guide to the command families the landing references
 - [run-artifact-contract.md](./run-artifact-contract.md): canonical artifact roots and file contracts

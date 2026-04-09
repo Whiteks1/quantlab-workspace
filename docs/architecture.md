@@ -2,6 +2,8 @@
 
 This document explains the product structure that the QuantLab Research landing presents.
 
+For the repo-level scope rule, see [brand-architecture.md](./brand-architecture.md).
+
 ## Product sentence
 
 QuantLab Research is the public quantitative research product inside the broader QuantLab ecosystem, with supervised operational boundaries and reviewable outputs.

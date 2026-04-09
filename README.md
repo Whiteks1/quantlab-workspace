@@ -1,6 +1,8 @@
 # QuantLab Research Landing
 
-QuantLab Research is the public web surface for the QuantLab ecosystem. This repo contains the landing assets and implementation work for the research product and its public explanation layer, including its relationship to QuantLab Core and QuantPulse.
+QuantLab Research is the public web surface for one product, not the whole QuantLab ecosystem. This repo contains the landing assets and implementation work for the QuantLab Research product and its public explanation layer, including only the necessary relationship to QuantLab Core and QuantPulse.
+
+The canonical scope rule for this repo is documented in [`docs/brand-architecture.md`](./docs/brand-architecture.md).
 
 ## Git workflow
 
