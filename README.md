@@ -4,6 +4,21 @@ QuantLab Research is the public web surface for one product, not the whole Quant
 
 The canonical scope rule for this repo is documented in [`docs/brand-architecture.md`](./docs/brand-architecture.md).
 
+## Live site
+
+Production URL:
+
+- `https://leticia-padilla-dev.github.io/quantlab-workspace/`
+
+## Local validation
+
+```bash
+npm install
+npm run lint
+npm run build
+npm test
+```
+
 ## Git workflow
 
 The default slice workflow for this repo is:

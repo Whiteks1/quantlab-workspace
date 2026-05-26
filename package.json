@@ -3,6 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "description": "QuantLab Research demo site for reproducible quantitative research and supervised execution.",
+  "homepage": "https://leticia-padilla-dev.github.io/quantlab-workspace/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leticia-padilla-dev/quantlab-workspace.git"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
